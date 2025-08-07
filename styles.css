@@ -6,8 +6,8 @@
 }
 
 .hero {
-    width: 100vw;
-    height: 400px;
+    width: 100%;
+    min-height: clamp(12rem, 32vh, 20rem);
     background-color: #283e56;
     display: flex;
     flex-direction: column;
@@ -17,96 +17,132 @@
 
 .title {
     color: #fff;
-    font-size: 100px;
+    font-size: clamp(1.7rem, 4vw, 3.5rem);
 }
 
 .subtitle1 {
-    font-size: 30px;
+    font-size: clamp(1rem, 2vw, 2rem);
     color: #dbeafe;
 }
 
 .subtitle2 {
-    margin-top: 10px;
-    font-size: 20px;
+    margin-top: clamp(0.2rem, 0.7vw, 1rem);
+    font-size: clamp(0.9rem, 1.3vw, 1.4rem);
     color: #dbeafe;
 }
 
 .left-right-combo {
     display: flex;
-    width: 100vw;
-    height: 500px;
-    margin-bottom: 40px;
-    margin-top: 20px;
+    width: 100%;
+    min-height: clamp(16rem, 36vh, 24rem);
+    margin-bottom: clamp(1rem, 2vw, 3rem);
+    margin-top: clamp(0.7rem, 1vw, 2rem);
 }
 
 .half-side {
-    width: 50vw;
+    width: 50%;
     box-sizing: border-box;
-    border-radius: 20px;
-    box-shadow: 0 8px 32px rgba(40, 62, 86, 0.25), 0 1.5px 8px rgba(40, 62, 86, 0.10);
-    padding: 20px;  
+    border-radius: clamp(0.5rem, 1vw, 1.5rem);
+    box-shadow:
+        0 clamp(0.4rem, 0.7vw, 1.5rem) clamp(1.2rem, 2vw, 2.5rem) rgba(40, 62, 86, 0.18),
+        0 clamp(0.05rem, 0.1vw, 0.3rem) clamp(0.4rem, 0.7vw, 1.5rem) rgba(40, 62, 86, 0.08);
+    padding: clamp(0.7rem, 1vw, 2rem);   
 }
 
 .half-side img {
     width: 50%;
     height: 100%;
+    height: clamp(16rem, 36vh, 24rem);
     object-fit: cover;
     display: block;
-    border-radius: 24px;
+    border-radius: clamp(0.5rem, 1vw, 1.5rem);
 }
 
 .half-side h2 {
     color: #1a5fa0;
-    font-size: 32px;
-    margin-bottom: 18px;
+    font-size: clamp(1rem, 2vw, 2rem);
+    margin-bottom: clamp(0.7rem, 1vw, 1.5rem);
     font-weight: 700;
-    letter-spacing: 1px;
 }
 
 .half-side ul {
-    font-size: 18px;
+    font-size: clamp(0.9rem, 1vw, 1.2rem);
     list-style: square;
-    margin: 0 20px 20px 20px;  
-
+    margin: 0 clamp(0.2rem, 0.5vw, 1rem) clamp(0.2rem, 0.5vw, 1rem) clamp(0.2rem, 0.5vw, 1rem);   
 }
 
 .image-only {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: none;
+    box-shadow: none;
 }
 
 li {
-    margin-bottom: 50px;
+    margin-bottom: clamp(0.7rem, 2vw, 3rem);
 }
 
 .scandal-title {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 32px;
+    font-size: clamp(1rem, 1.1vw, 1.5rem);
 }
 
 .triple {
     display: flex;
-    width: 100vw;
-    height: 500px;
+    width: 100%;
+    min-height: clamp(16rem, 36vh, 24rem);
 }
 
 .third-side {
-    width: 33.333vw;
+    width: 33.333%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 10px;
-    border-radius: 20px;
-    box-shadow: 0 8px 32px rgba(40, 62, 86, 0.25), 0 1.5px 8px rgba(40, 62, 86, 0.10);
+    margin-top: clamp(0.7rem, 1vw, 2rem);
+    border-radius: clamp(0.5rem, 1vw, 1.5rem);
+    box-shadow:
+        0 clamp(0.4rem, 0.7vw, 1.5rem) clamp(1.2rem, 2vw, 2.5rem) rgba(40, 62, 86, 0.18),
+        0 clamp(0.05rem, 0.1vw, 0.3rem) clamp(0.4rem, 0.7vw, 1.5rem) rgba(40, 62, 86, 0.08);
+    padding: clamp(0.7rem, 1vw, 2rem);
 }
 
 .third-side img {
-    width: 50%;
+    width: 55%;
     height: 50%;
     object-fit: cover;
     display: block;
-    border-radius: 24px;
+    border-radius: clamp(0.4rem, 0.7vw, 1rem);
+    margin-bottom: clamp(0.3rem, 0.7vw, 1rem);
+}
+
+.third-side h3 {
+    font-size: clamp(0.9rem, 1vw, 1.3rem);
+    margin-bottom: clamp(1rem, 2vw, 2.5rem);
+}
+
+.third-side p {
+    font-size: clamp(0.8rem, 0.95vw, 1.1rem);
+    line-height: 1.5;
+    color: black;
+    text-align: left;
+    width: 90%;
+}
+
+#works-cited h2 {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto clamp(0.5rem, 1vw, 2rem) auto;
+    font-size: clamp(1rem, 1.3vw, 2rem);
+}
+
+#works-cited p {
+    text-align: left;
+    padding-left: clamp(2.5rem, 4vw, 4rem); 
+    padding-right: clamp(0.7rem, 1vw, 2rem);
+    margin-bottom: clamp(0.5rem, 1vw, 1.5rem);
+    font-size: clamp(0.8rem, 1vw, 1.2rem);
+    text-indent: -2.5rem;
 }
